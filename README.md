@@ -1,53 +1,27 @@
 # Frontend Assignment
-There are 2 frontend tasks described below.
-Each of the task has a basic UI skeleton which is open for improvement/enhancement.
 
-<details>
-  <summary>Task 1</summary>
-  
-  ## Simple 4x4 Grid Game
-`npm i` and then `npm start`, go t0 `http://localhost:3000`, you will see below UI for Task 1 tab
+Project Link : https://reasonlabs.vercel.app/
 
+#Project:
 
-[![N|Solid](./task_1.png)]
+The project was updated to react 18 by changing the render to createRoot method to utilize the new
+improved react features.
 
-## Tasks
+Test cases for all the components.
 
-- User should be able to click on any box from the grid,
-- Clicked box should become of color red and box should also display the `Box ${click_number}`,
-- At any given point only 2 boxes (most recently clicked) should be in red color, all previously clicked boxes should turn blue,
-- Once a box is clicked , user should not be able to click on it again.
+# Task1
 
-</details>
+Approach:
 
-<details>
-  <summary>Task 2</summary>
-  
-  ## Phone Book
-`npm i` and then `npm start`, go t0 `http://localhost:3000`, you will see below UI for Task 2 tab
+To hande all the conditions, either the array or objects was the way to solve all the scenarios.
+I went with the objects as to access a value or delete value it happens in O(1) time complexity and making
+it more robust when the size of grid increases.
 
+# Task2
 
-[![N|Solid](./task_2.png)]
+Approach:
 
-## Tasks
+The form had few values and didn't involved much dynamic form changes. So it was better to use
+the html form methods to retrieving and clearing values.
 
-- Allow user to add entries to phonebook and display in table below,
-- Alert error when duplicate first and last name,
-- Add ability to remove records from the phone book
-
-</details>
-
-## Criteria
-
-- Cleanliness of the code
-- Use modern ES6+ syntax, async/await, elegant & readable code
-- All the edgecases have been handled
-- Tests are not needed but will be a big plus
-- README.md file explaining your high level solution and any decisions you made and the reasons behind them
-
-
-## How to submit
-
-- Clone this repository in your local machine,
-- Complete the task and upload to github,
-- Share your public repo link with us.
+The table will only shown when there are one or more than one records.
