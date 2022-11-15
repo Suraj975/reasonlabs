@@ -1,7 +1,7 @@
-export const getGridProperties = (index, boxColor) => {
+export const getGridProperties = (index, gridBoxState) => {
   const gridIndex = `grid-${index}`;
-  const isActiveGrid = boxColor.active?.[gridIndex] === index;
-  const isDormantGrid = boxColor.dormant?.[gridIndex] === index;
+  const isActiveGrid = gridBoxState.active?.[gridIndex] === index;
+  const isDormantGrid = gridBoxState.dormant?.[gridIndex] === index;
   const showGridNumber = isActiveGrid || isDormantGrid;
   const gridClassName = isActiveGrid
     ? "active"

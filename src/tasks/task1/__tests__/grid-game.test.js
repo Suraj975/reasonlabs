@@ -8,8 +8,8 @@ const initialState = {
   dormant: {},
 };
 
-// Stub the initial state
-const stubInitialState = {
+// updated initial state
+const updatedInitialState = {
   active: {
     "grid-13": 13,
     "grid-12": 12,
@@ -32,7 +32,7 @@ test("should show correct number of total boxes in the grid", () => {
 });
 
 test("should show correct active and dormant boxes in grid", async () => {
-  React.useState = jest.fn().mockReturnValueOnce([stubInitialState, {}]);
+  React.useState = jest.fn().mockReturnValueOnce([updatedInitialState, {}]);
   let component = render(<Task1 {...props} />);
   const { container } = component;
   const totalDormantBoxes =
