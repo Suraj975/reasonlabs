@@ -22,6 +22,6 @@ it more robust when the size of grid increases.
 Approach:
 
 The form had few values and didn't involved much dynamic form changes. So it was better to use
-the html form methods to retrieving and clearing values.
+the html form methods for retrieving and clearing values.
 
 The table will only shown when there are one or more than one records.
