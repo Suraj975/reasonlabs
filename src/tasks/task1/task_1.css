@@ -11,12 +11,26 @@ div.game {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   width: 120px;
-  height: 120px
+  height: 120px;
+  justify-content: center;
 }
 
 .game-cell {
   width: 60px;
   height: 60px;
-  border: 1px solid ;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  color: white;
+}
+
+.active {
+  background: red;
+}
+
+.dormant {
+  background: blue;
 }
