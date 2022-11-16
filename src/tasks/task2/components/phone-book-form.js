@@ -11,7 +11,7 @@ function PhoneBookForm(props) {
     const userFirstname = data.get("userFirstname");
     const userLastname = data.get("userLastname");
     if (userFirstname === userLastname) {
-      setFormError("suraname cannot be same as firstname");
+      setFormError("Last name cannot be same as first name");
       return;
     }
     setUserDetails([
