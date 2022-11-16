@@ -3,9 +3,9 @@ import { style } from "../style";
 
 const UserRecords = ({ useDetails, setUserDetails }) => {
   const handleDelete = (index) => {
-    const useDetailsClone = [...useDetails];
-    useDetailsClone.splice(index, 1);
-    setUserDetails(useDetailsClone);
+    const userDetailsClone = [...useDetails];
+    userDetailsClone.splice(index, 1);
+    setUserDetails(userDetailsClone);
   };
   return (
     <>
