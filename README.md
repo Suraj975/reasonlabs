@@ -9,6 +9,8 @@ improved react features.
 
 Test cases for all the components.
 
+Mobile responsive.
+
 # Task1
 
 Approach:

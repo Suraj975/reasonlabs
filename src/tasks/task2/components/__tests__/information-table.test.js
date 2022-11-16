@@ -33,6 +33,5 @@ test("Should render correct number of user records", () => {
   const { findAllByTestId } = component;
 
   const tableRowElements = findAllByTestId("content");
-  console.log("children", tableRowElements, tableRowElements.length);
   expect(tableRowElements.length).toBe(props.userDetails?.length);
 });
